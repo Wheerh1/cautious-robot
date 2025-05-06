@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1");
-            Console.WriteLine("1");
-            Console.WriteLine("1");
-            Console.WriteLine("1");
-            Console.WriteLine("1");
+            Console.WriteLine("My name is Sam");
+            Console.WriteLine("I like green eggs and Ham");
+            Console.WriteLine("I am writing some");
+            Console.WriteLine("words here for");
+            Console.WriteLine("everyone to see!");
 
             Console.WriteLine("My Name is Kavarn");
             Console.WriteLine("I am 24");
