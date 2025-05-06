@@ -34,13 +34,6 @@ namespace groupGit
                         check = false;
                     }
                 }
-                //for (int j = 0; j <= i; j++) // while loop that gets exited manually if it detects same number in array and then restarts the check 
-                //{
-                //    while (lotto[j] == temp) 
-                //    {
-                //        temp = rand.Next(1, 8);
-                //    }
-                //}
                 lotto[i] = temp;
             }
 
@@ -50,11 +43,11 @@ namespace groupGit
             }
             Console.ReadLine();
 
-            Console.WriteLine("My Name is Kavarn");
-            Console.WriteLine("I am 24");
-            Console.WriteLine("I don't");
-            Console.WriteLine("know what else to");
-            Console.WriteLine("write");
+            string[] cities = { "Dunedin", "Auckland", "Wellington", "Christchurch" };
+            foreach (string city in cities)
+            { 
+                Console.WriteLine(city);
+            }
 
             Console.WriteLine("Rhys be writing here");
             int flipCount, flips=0;
