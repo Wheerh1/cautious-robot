@@ -72,6 +72,8 @@ namespace groupGit
                 Thread.Sleep(200);
                 flips = flips + 1;
             }
+            Console.WriteLine("git, I hate you too");
+            Console.ReadLine();
 
         }
     }
