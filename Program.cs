@@ -1,4 +1,6 @@
-﻿namespace groupGit
+﻿using System;
+
+namespace groupGit
 {
     internal class Program
     {
