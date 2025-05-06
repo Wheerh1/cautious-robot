@@ -55,11 +55,28 @@
             Console.WriteLine("write");
 
             Console.WriteLine("Rhys be writing here");
-            Console.WriteLine("and still writing");
-            Console.WriteLine("mayhaps writing a little more");
-            Console.WriteLine("and more");
-            Console.WriteLine("and more once again");
-            Console.ReadLine();
+            int flipCount, flips=0;
+            Random random = new Random();
+
+            flipCount = random.Next(20);
+            Console.WriteLine("Flipping");
+            Thread.Sleep(500);
+            while (flips < flipCount)
+            {
+                Console.Clear();
+                Console.WriteLine(" -");
+                Thread.Sleep(200);
+                Console.Clear();
+                Console.WriteLine(" \\ ");
+                Thread.Sleep(200);
+                Console.Clear();
+                Console.WriteLine(" |");
+                Thread.Sleep(200);
+                Console.Clear();
+                Console.WriteLine(" /");
+                Thread.Sleep(200);
+                flips = flips + 1;
+            }
 
         }
     }
