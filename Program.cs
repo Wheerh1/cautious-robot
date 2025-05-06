@@ -4,11 +4,49 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("My name is Sam");
-            Console.WriteLine("I like green eggs and Ham");
-            Console.WriteLine("I am writing some");
-            Console.WriteLine("words here for");
-            Console.WriteLine("everyone to see!");
+            const int amount = 6;
+            int[] lotto = new int[7];
+            Random rand = new Random();
+
+            for (int i = 0; i <= amount; i++)
+            {
+                int temp = rand.Next(1, 8);
+
+                bool check = true;
+                while (check)
+                {
+                    bool valid = true;
+                    foreach (int j in lotto)
+                    {
+                        if (j == temp)
+                        {
+                            valid = false;
+                        }
+                    }
+                    if (!valid)
+                    {
+                        temp = rand.Next(1, 8);
+                    }
+                    else
+                    {
+                        check = false;
+                    }
+                }
+                //for (int j = 0; j <= i; j++) // while loop that gets exited manually if it detects same number in array and then restarts the check 
+                //{
+                //    while (lotto[j] == temp) 
+                //    {
+                //        temp = rand.Next(1, 8);
+                //    }
+                //}
+                lotto[i] = temp;
+            }
+
+            foreach (int j in lotto)
+            {
+                Console.WriteLine($"{j}");
+            }
+            Console.ReadLine();
 
             Console.WriteLine("My Name is Kavarn");
             Console.WriteLine("I am 24");
