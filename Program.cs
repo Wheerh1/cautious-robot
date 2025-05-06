@@ -32,13 +32,6 @@
                         check = false;
                     }
                 }
-                //for (int j = 0; j <= i; j++) // while loop that gets exited manually if it detects same number in array and then restarts the check 
-                //{
-                //    while (lotto[j] == temp) 
-                //    {
-                //        temp = rand.Next(1, 8);
-                //    }
-                //}
                 lotto[i] = temp;
             }
 
