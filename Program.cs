@@ -10,11 +10,11 @@
             Console.WriteLine("words here for");
             Console.WriteLine("everyone to see!");
 
-            Console.WriteLine("My Name is Kavarn");
-            Console.WriteLine("I am 24");
-            Console.WriteLine("I don't");
-            Console.WriteLine("know what else to");
-            Console.WriteLine("write");
+            string[] cities = { "Dunedin", "Auckland", "Wellington", "Christchurch" };
+            foreach (string city in cities)
+            { 
+                Console.WriteLine(city);
+            }
 
             Console.WriteLine("Rhys be writing here");
             Console.WriteLine("and still writing");
